@@ -1,0 +1,8 @@
+platform :ios, '8.0'
+use_frameworks!
+
+target ‘FBLogin’ do
+  pod 'FBSDKCoreKit', '~> 4.22'
+  pod 'FBSDKShareKit', '~> 4.22'
+  pod 'FBSDKLoginKit', '~> 4.22'
+end

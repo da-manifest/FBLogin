@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16F60a" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rkW-fb-hyx" customClass="FBSDKProfilePictureView">
+                                <rect key="frame" x="143" y="52" width="128" height="128"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="rkW-fb-hyx" secondAttribute="height" multiplier="1:1" id="RiN-UN-Hqn"/>
+                                    <constraint firstAttribute="height" constant="128" id="mhp-Dd-SzE"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QsK-Dw-0qt">
+                                <rect key="frame" x="186" y="196" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pMy-UB-sNa">
+                                <rect key="frame" x="186" y="233" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SId-rg-GQV">
+                                <rect key="frame" x="186" y="270" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="97A-K2-IsT">
+                                <rect key="frame" x="186" y="307" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yxT-Sb-0qa" customClass="FBSDKLoginButton">
+                                <rect key="frame" x="87" y="344" width="240" height="60"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="4GW-UO-yVb"/>
+                                    <constraint firstAttribute="width" secondItem="yxT-Sb-0qa" secondAttribute="height" multiplier="4:1" id="hyx-n3-Xf2"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="pMy-UB-sNa" firstAttribute="top" secondItem="QsK-Dw-0qt" secondAttribute="bottom" constant="16" id="03A-YM-VsY"/>
+                            <constraint firstItem="yxT-Sb-0qa" firstAttribute="top" secondItem="97A-K2-IsT" secondAttribute="bottom" constant="16" id="6aY-Dx-lcg"/>
+                            <constraint firstItem="QsK-Dw-0qt" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="B0e-Dn-8FH"/>
+                            <constraint firstItem="pMy-UB-sNa" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="DZC-kR-rh7"/>
+                            <constraint firstItem="yxT-Sb-0qa" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Khd-2D-zSV"/>
+                            <constraint firstItem="97A-K2-IsT" firstAttribute="top" secondItem="SId-rg-GQV" secondAttribute="bottom" constant="16" id="QNv-Se-wZI"/>
+                            <constraint firstItem="97A-K2-IsT" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ZM5-WE-gCJ"/>
+                            <constraint firstItem="rkW-fb-hyx" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="32" id="d9a-5T-84K"/>
+                            <constraint firstItem="SId-rg-GQV" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="rty-84-YGR"/>
+                            <constraint firstItem="SId-rg-GQV" firstAttribute="top" secondItem="pMy-UB-sNa" secondAttribute="bottom" constant="16" id="sn1-IZ-gkZ"/>
+                            <constraint firstItem="QsK-Dw-0qt" firstAttribute="top" secondItem="rkW-fb-hyx" secondAttribute="bottom" constant="16" id="uuj-zg-eGp"/>
+                            <constraint firstItem="rkW-fb-hyx" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="z4h-Of-H8C"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="loginButton" destination="yxT-Sb-0qa" id="FhK-Lh-LUi"/>
+                        <outlet property="loginStatusLabel" destination="QsK-Dw-0qt" id="oNg-Db-TlA"/>
+                        <outlet property="profilePictureView" destination="rkW-fb-hyx" id="EOo-WE-JWV"/>
+                        <outlet property="userEmailLabel" destination="SId-rg-GQV" id="HK2-IJ-gNj"/>
+                        <outlet property="userIdLabel" destination="97A-K2-IsT" id="Nec-1S-4cj"/>
+                        <outlet property="userNameLabel" destination="pMy-UB-sNa" id="e4K-mv-Ad4"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
